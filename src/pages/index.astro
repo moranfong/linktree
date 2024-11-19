@@ -5,17 +5,25 @@ import Chip from "../components/chip.astro";
 // Put all your links here
 const links: Link[] = [
   {
-    desc: "Example Project", // The text that will be rendered
-    link: "example.com", // The link
+    desc: "Blog", // The text that will be rendered
+    link: "fmoran.me", // The link
     icon: "fa-solid fa-home", // An icon from Font Awesome: https://fontawesome.com/search?o=r&m=free
   },
   {
-    desc: "Cool Project",
-    link: "example.com",
-    icon: "fa-solid fa-store",
+    desc: "Mini Blog",
+    link: "mini.fmoran.me",
+    icon: "<fa-brands fa-canadian-maple-leaf",
   },
-];
----
+  {
+    desc: "Signal Messenger",
+    link: "https://signal.me/#eu/3HL7nLeMMVdqAw_PhJs3tL76ZT4-civXyTLnXyxtZKzmaNWK0SlNRKosoQHXK135",
+    icon: "fa-brands fa-signal-messenger",
+  },
+  {
+    desc: "Mastodon",
+    link: "https://mastodon.social/@FMoran",
+    icon: "fa-brands fa-mastodon",
+  },
 
 <html lang='en'>
   <head>
@@ -30,17 +38,17 @@ const links: Link[] = [
       referrerpolicy='no-referrer'
     />
     <meta name='generator' content={Astro.generator} />
-    <meta name='description' content='Useful links of Neville Brem' />
-    <meta name='author' content='Neville Brem' />
-    <meta property='og:title' content='Neville Brem' />
+    <meta name='description' content='Useful links of Moran Fong' />
+    <meta name='author' content='Moran Fong' />
+    <meta property='og:title' content='Moran Fong' />
     <meta property='og:image' content='favicon.png' />
-    <meta property='og:description' content='Linktree of Neville Brem' />
-    <meta property='twitter:description' content='Linktree of Neville Brem' />
-    <meta property='twitter:title' content='Neville Brem' />
+    <meta property='og:description' content='Linktree of Moran Fong' />
+    <meta property='twitter:description' content='Linktree of Moran Fong' />
+    <meta property='twitter:title' content='Moran Fong' />
     <meta property='twitter:image' content='favicon.png' />
     <meta name='twitter:card' content='summary' />
-    <meta name='twitter:site' content='@BremNeville' />
-    <title>Links of Neville Brem</title>
+    <meta name='twitter:site' content='@nopeople404' />
+    <title>Links of Moran Fong</title>
     <style>
       @font-face {
         font-family: Geist;
@@ -53,7 +61,7 @@ const links: Link[] = [
     class='bg-[#1e1e1e] flex justify-center items-center w-screen h-screen font-[Geist] text-white'
   >
     <main class='w-[80%] flex flex-col gap-8'>
-      <h1 class='md:text-6xl text-4xl font-black text-center'>Your Name</h1>
+      <h1 class='md:text-6xl text-4xl font-black text-center'>Moran Fong</h1>
       <div class='grid justify-center gap-4'>
         {
           links.map(({ desc, link, icon }) => {
@@ -63,11 +71,11 @@ const links: Link[] = [
       </div>
       <div class='flex justify-center gap-8'>
         <!-- Put some social links who have a definitive icon here: -->
-        <Chip link='youtube.com/' icon='fa-brands fa-youtube' />
-        <Chip link='github.com/' icon='fa-brands fa-github' />
-        <Chip link='x.com/' icon='fa-brands fa-x-twitter' />
+        <!-- <Chip link='youtube.com/' icon='fa-brands fa-youtube' /> -->
+        <Chip link='github.com/moranfong' icon='fa-brands fa-github' />
+        <Chip link='x.com/nopeople404' icon='fa-brands fa-x-twitter' />
       </div>
-      <p class='text-center mx-auto'>Some additional text, like your email</p>
+      <p class='text-center mx-auto'>Or write me a mail at i@fmoran.me</p>
     </main>
   </body>
 </html>
